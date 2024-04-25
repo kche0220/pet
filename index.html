@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="my_reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./pet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="pet.js" defer></script>
+    <!-- <script src="/maps.js" defer></script> -->
+  </head>
+  <body>
+    <!--  전국 반려동물 동반가능 문화시설 위치 -->
+    <header>
+      <h1><img src="logo.png" alt="logo" /></h1>
+      <div class="login">
+        <a href="#">로그인</a>
+        <a href="#">회원가입</a>
+      </div>
+    </header>
+    <div class="wrap">
+      <section class="sec1">
+        <h2>검색</h2>
+        <div class="search">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="검색어를 입력하세요."
+          />
+          <button class="searchBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div id="searchResults"></div>
+      </section>
+      <section class="sec2">
+        <ul class="items">
+          <li class="item">
+            <h4 class="Title">시설명</h4>
+            <span class="address">주소</span>
+            <p class="category">카테고리</p>
+            <p class="tel">전화번호</p>
+          </li>
+        </ul>
+      </section>
+      <section class="sec3">
+        <!-- 강사수정 -->
+        <button class="prevBtn"><i class="fa-solid fa-arrow-left"></i></button>
+        <div id="paginationContainer" class="pagination"></div>
+        <div id="pagination"></div>
+        <button class="nextBtn"><i class="fa-solid fa-arrow-right"></i></button>
+      </section>
+    </div>
+  </body>
+</html>

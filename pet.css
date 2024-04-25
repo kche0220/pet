@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap');
+:root {
+  --background-blue: #b1d0ff;
+  --background-green: rgb(232, 248, 236);
+  --font-DoHyeon: 'Do Hyeon', sans-serif;
+  --font-Gowun: 'Gowun Batang', serif;
+  --font-Hahmlet: 'Hahmlet', serif;
+}
+body {
+  background-color: var(--background-green);
+}
+.wrap {
+  overflow: hidden;
+  margin: auto;
+  width: calc(100% - 14rem);
+}
+header {
+  position: relative;
+  width: 100%;
+  font-size: 20px;
+  font-family: var(--font-DoHyeon);
+  position: relative;
+  height: 360px;
+  /* 배경 */
+  background: linear-gradient(
+        var(--background-blue) 50%,
+        rgba(205, 235, 215, 0) 0
+      )
+      0 0,
+    radial-gradient(
+        circle closest-side,
+        var(--background-blue) 105%,
+        rgba(205, 235, 215, 0) 0
+      )
+      0 0,
+    radial-gradient(
+        circle closest-side,
+        var(--background-blue) 40%,
+        rgba(205, 235, 215, 0) 0
+      )
+      0px 0 rgb(232, 248, 236);
+  background-size: 100px 300px;
+  background-repeat: repeat-x;
+  text-align: center;
+}
+h1 {
+  padding-top: 15px;
+  font-size: 30px;
+}
+.login {
+  position: absolute;
+  top: 10px;
+  right: 5%;
+  display: flex;
+  width: 10%;
+}
+.login a {
+  color: white;
+  border-radius: 10px;
+  white-space: nowrap;
+  background-color: #fcac00;
+  margin-left: 5px;
+  display: block;
+  padding: 7%;
+  transition: 0.3s;
+}
+.login a:hover {
+  background-color: #97d19f;
+}
+.sec1 {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  background-color: var(--background-green);
+}
+h2 {
+  font-family: var(--font-DoHyeon);
+  color: #797878;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 50px;
+}
+.search {
+  margin: auto;
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #b3b1b1;
+  border-radius: 400px;
+  overflow: hidden;
+  background-color: white;
+}
+.search button {
+  font-size: 20px;
+  border: none;
+  width: 75px;
+  background-color: #97d19f;
+  border-radius: 100px;
+  color: white;
+  transition: 0.2s;
+}
+.search button:hover{
+  background-color: #b1d0ff;
+}
+.search input {
+  font-family: var(--font-Hahmlet);
+  font-size: 20px;
+  border: none;
+  padding: 20px;
+  outline: none;
+}
+.sec2 {
+  background-color: var(--background-green);
+}
+.items {
+  padding-top: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* height: 1200px;s */
+  width: 90%;
+  display: flex;
+  gap: 10px;
+  margin: auto;
+}
+.item {
+  position: relative;
+  line-height: 2;
+  text-align: center;
+  font-family: var(--font-Hahmlet);
+  border-radius: 10px;
+  border: 2px solid #dbdbdb;
+  box-shadow: 5px 5px 5px -5px #aaa9a9;
+  width: 30%;
+  height: 20%;
+  background-color: rgb(238, 247, 255);
+}
+h4 {
+  border-bottom: 2px solid #dbdbdb;
+  padding: 10px 0;
+  font-family: var(--font-DoHyeon);
+  font-size: 20px;
+}
+.item p {
+  padding: 10px 0;
+  text-decoration: solid underline rgb(221, 255, 159) 15px;
+  text-underline-offset: -10px;
+}
+.more {
+  font-size: 14px;
+  padding: 7px 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: aliceblue;
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+}
+.sec3 {
+  margin: auto;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  text-align: center;
+}
+.sec3 button {
+  margin-left: 5px;
+  font-family: var(--font-DoHyeon);
+  text-align: center;
+  font-size: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: #b1d0ff;
+  background-size: 10px;
+  border-radius: 100px;
+  transition: 0.3s;
+  border: 1px solid #dbdbdb;
+}
+.sec3 button.active {
+  background-color: #97d19f;
+}
+@media(max-width:1100px) {
+  .item {
+    width: 48%;
+  }
+  .search {
+    width: auto;
+  }
+  input {
+    width: 50%;
+  }
+  .login {
+    right:10%;
+  }
+}
+@media(max-width:850px){
+  .items {
+    width: 100%;
+  }
+  .item {
+    width: 100%;
+    padding: 10%;
+  }
+  .login {
+    right:18%;
+  }
+}
